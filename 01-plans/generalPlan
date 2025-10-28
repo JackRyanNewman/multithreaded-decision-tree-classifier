@@ -1,0 +1,50 @@
+Requirements 
+	1. [T] Single zip file & read me file. 
+	2. [T] Inlcuded header with your name at top of each source code file. 
+	3. [T] Inlcude software engineer standard comments. 
+	4. [T] A README text file that provides instructions for how your program can be compiled (as needed) and run from the command line
+
+	
+	
+
+Timeline and overview
+	1. [T] First Project Notes
+	2. [T] Read through full thing, do pipeline in middle, then re-read
+	3. [T] data structures 
+
+	
+
+Ideas: 
+1. Kinda need to read full algorthimn to get snese of how im going to split the data up. 
+
+    
+    
+Main class: 
+  short yPos. 
+
+  char[][] fullDataSet
+  Boolean[][] randomizer
+  list<char[]> subDataSet 
+
+  list<Short> retrieval
+  attributes[] attributes
+  attributes[] outputClass
+  
+
+Node: 
+  char[][] avaible data. 
+  
+  
+attribute:
+  String name
+  short index
+  1. Map<char, String>
+
+   
+    
+
+
+  
+
+
+ 

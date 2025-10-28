@@ -1,0 +1,22 @@
+Jack Newman
+Date: 11-1-2024
+For viewing best reading experience expand window till you reach end of =.  
+=================================================================================================================================================
+Completion Status: Fully complete.
+Using: Its a eclipse java project, files are in SRC. The main class is called SearchController and that's where you can feed it the inputs via command line or external class. The filing pathing for it is not tied to anything specific. You could also use my tester class if you would like. 
+
+
+=================================================================================================================================================
+Other Folders and files: 
+	SRC: Java files 
+	00-References: Assignment documentation, and referenced lectures. I can remove them if I upload for resume. 
+	01-Planning: Where I plan my thoughts and do my checklist.  
+	a02-data: Where I store my data, program for file pathing is not necessarily tied to this unless you are using testing file. 
+	
+
+Note: Change my static variable called timeTrialingActive if you want time test mine at all! mine was roughly 3x faster than yours on the largest stress test, but if you it becomes very optimized after the first run as well. I started running out of time, so I didn't get to fully optimize
+my accuracy calculations. But I am still extremely proud of this program. I had a blast. One thing i found is that not using hashmaps during important calculations, and instead making int subsets = new int[z][123], with z being the amount of outputs, you could get a very drastic speed up. Furthermore, if you know the index of where each attribute is, then you can calculate each attribute at a time, and map their unique 
+alphanumeric characters arbitrarily to each row within this int array. I can do this because I split the data up into subsets organized into 
+groups based off their outputs. Also, I believe if we disclude data creation in randomization or in general, my algorithm is incredibly fast! Like it can do size 5000, 10,000 trilas in 8s, and size 4000 and 10,000 trials in 4s. 
+
+=================================================================================================================================================

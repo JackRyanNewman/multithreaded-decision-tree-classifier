@@ -1,0 +1,19 @@
+# tables
+1
+patrons: N=none S=some F=full
+
+: w=wait n=notwait z=f
+
+N n
+N n
+F n
+F n
+F n
+F n
+F w
+F w
+S w
+S w
+S w
+S w
+F z
