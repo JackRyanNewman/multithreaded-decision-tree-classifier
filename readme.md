@@ -17,7 +17,45 @@ The classifier builds learning curves by training and validating decision trees 
 
 ---
 
+## Command Line Arguments
+
+- **`-f <FILENAME>`**  
+  **Required.** Path to the dataset file in CSV format. The file should contain feature columns followed by a class label column.
+
+- **`-b <base>`**  
+  Base training set size for learning curves. Specifies the initial number of training examples to use.  
+  *Default: 50*
+
+- **`-i <increment>`**  
+  Number of additional training examples to add for each learning curve point.  
+  *Default: 50*
+
+- **`-l <limit>`**  
+  Maximum training set size to use for learning curves.  
+  *Default: 500*
+
+- **`-t <trials>`**  
+  Number of trials to run for each training set size (for statistical significance).  
+  *Default: 5*
+
+- **`-d <depth>`**  
+  Maximum depth allowed for the decision tree. Controls tree complexity and prevents overfitting.  
+  *Default: 10*
+
+- **`-r`**  
+  Enable randomization of training data selection. When set, training examples are randomly sampled rather than using the first N examples.
+
+- **`-v <verbosity>`**  
+  Output verbosity level (0-3). Higher levels provide more detailed progress information and debugging output.  
+  *Default: 1*
+
+- **`-p`**  
+  Enable parallel tree construction. Uses custom threading implementation to speed up the tree building process.
+
+---
+
 ## Usage
 Compile and run from the command line:
 ```bash
-java Driver -f <FILENAME> [-b base] [-i increment] [-l limit] [-t trials] [-d depth] [-r] [-v verbosity] [-p]
+javac *.java
+java Driver -f dataset.csv -b 100 -i 25 -l 300 -t 10 -d 8 -r -v 2 -p
