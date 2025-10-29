@@ -54,8 +54,14 @@ The classifier builds learning curves by training and validating decision trees 
 
 ---
 
+## READ references\assignment-02 (3).pdf for more info
+
+---
+
 ## Usage
 Compile and run from the command line:
 ```bash
 javac *.java
 java Driver -f dataset.csv -b 100 -i 25 -l 300 -t 10 -d 8 -r -v 2 -p
+
+
